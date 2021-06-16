@@ -23,7 +23,9 @@ describe('Car class', () => {
     expect(camry).toHaveProperty('model', 'Camry')
   })
   it('cars have a "drive" method', () => {
-    expect(mustang.drive).toBe
+    expect(mustang.drive).toBeDefined()
+    expect(mustang.drive).toBeInstanceOf(Function)
+    expect(mustang.divb)
   })
 })
 
