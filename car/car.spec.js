@@ -2,7 +2,7 @@ const Car = require('./car')
 
 describe('Car class', () => {
   test('something', () => {
-    expect(Car).
+    expect(Car).toBeDefined()
   })
 })
 
