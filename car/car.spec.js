@@ -25,7 +25,7 @@ describe('Car class', () => {
   it('cars have a "drive" method', () => {
     expect(mustang.drive).toBeDefined()
     expect(mustang.drive).toBeInstanceOf(Function)
-    expect(mustang.divb)
+    expect(mustang.drive).toBe(Car.prototype.drive)
   })
 })
 
