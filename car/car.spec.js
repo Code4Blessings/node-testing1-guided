@@ -30,6 +30,10 @@ describe('Car class', () => {
     expect(mustang.drive).toBeInstanceOf(Function)
     expect(mustang.drive).toBe(Car.prototype.drive)
   })
+  it('driving the car increases odometer', () => {
+    // drive the car
+    
+  })
 })
 
 test('sanity', () => {          // test
