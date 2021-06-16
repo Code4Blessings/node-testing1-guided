@@ -22,7 +22,7 @@ describe('Car class', () => {
     const camry = new Car('Toyota', 'Camry')
     expect(camry).toHaveProperty('model', 'Camry')
   })
-  it('cars have a drive method', () => {
+  it('cars have a "drive" method', () => {
     // use the mustang right here!
   })
 })
