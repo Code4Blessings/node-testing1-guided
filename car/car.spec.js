@@ -31,10 +31,10 @@ describe('Car class', () => {
     expect(mustang.drive).toBe(Car.prototype.drive)
   })
   it('driving the car increases odometer', () => {
-    // drive the car
-    // assert that the odometer has increased by driven distance
     mustang.drive(5)
     expect(mustang.odometer).toBe(5)
+    mustang.drive(5)
+    expect(mustang.odometer).toBe(10)
   })
 })
 
