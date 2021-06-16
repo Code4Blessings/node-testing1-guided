@@ -1,5 +1,13 @@
 const Car = require('./car')
 
+describe('Car class', () => {
+
+})
+
+
+
+
+
 test('sanity', () => {          // test
   expect(true).not.toBe(false)  // assertion
   expect(1 + 2).toBe(3)         // another assertion
