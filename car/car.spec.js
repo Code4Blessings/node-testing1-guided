@@ -34,6 +34,7 @@ describe('Car class', () => {
     // drive the car
     // assert that the odometer has increased by driven distance
     mustang.drive(5)
+    expect(mustang.odometer).toBe(5)
   })
 })
 
