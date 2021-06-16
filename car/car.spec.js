@@ -33,6 +33,7 @@ describe('Car class', () => {
   it('driving the car increases odometer', () => {
     // drive the car
     // assert that the odometer has increased by driven distance
+    mustang.drive(5)
   })
 })
 
