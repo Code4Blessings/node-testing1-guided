@@ -1,6 +1,7 @@
 const Car = require('./car')
 
 describe('Car class', () => {
+  let mustang
   it('is defined', () => {
     expect(Car).toBeDefined()
   })
@@ -18,7 +19,9 @@ describe('Car class', () => {
     const camry = new Car('Toyota', 'Camry')
     expect(camry).toHaveProperty('model', 'Camry')
   })
-  it('cars have a drive method')
+  it('cars have a drive method', () => {
+
+  })
 })
 
 test('sanity', () => {          // test
