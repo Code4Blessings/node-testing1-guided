@@ -12,7 +12,7 @@ describe('Car class', () => {
     const celica = new Car()
     expect(celica).toHaveProperty('make', 'Toyota')
     const f150 = new Car()
-    expect(f150).toh
+    expect(f150).toHaveProperty('make', 'Ford')
   })
 })
 
