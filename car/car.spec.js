@@ -6,4 +6,5 @@ test('sanity', () => {          // test
   const o = {}
   const oo = o
   expect(o).toBe(oo)
+  expect({}).not.toBe({})
 })
