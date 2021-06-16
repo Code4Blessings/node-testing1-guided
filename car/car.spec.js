@@ -1,2 +1,4 @@
 // Test away!
-test.todo('sanity')
+test('sanity', () => {
+  
+})
