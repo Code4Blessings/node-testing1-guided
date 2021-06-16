@@ -22,6 +22,7 @@ describe('Car class', () => {
     const camry = new Car('Toyota', 'Camry')
     expect(camry).toHaveProperty('model', 'Camry')
   })
+  it('cars have an odometer that starts at 0')
   it('cars have a "drive" method', () => {
     expect(mustang.drive).toBeDefined()
     expect(mustang.drive).toBeInstanceOf(Function)
