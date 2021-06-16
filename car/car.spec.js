@@ -9,7 +9,8 @@ describe('Car class', () => {
     expect(celica).toBeInstanceOf(Car)
   })
   it('cars have a "make" property', () => {
-    
+    const celica = new Car()
+    // assert that celica has a "make" prop of "toyota"
   })
 })
 
