@@ -7,7 +7,6 @@ test('sanity', () => {          // test
   const oo = o
   expect(o).toBe(oo)
   expect({}).not.toBe({})
-
   const obj = { a: 1 }
   expect(obj).toEqual({ a: 1 })
 })
