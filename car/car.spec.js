@@ -1,7 +1,7 @@
 const Car = require('./car')
 
 describe('Car class', () => {
-  test('something', () => {
+  it('is defined', () => {
     expect(Car).toBeDefined()
   })
 })
