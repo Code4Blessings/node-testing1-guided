@@ -1,4 +1,4 @@
-
+const Car = require('./car')
 
 test('sanity', () => {          // test
   expect(true).not.toBe(false)  // assertion
