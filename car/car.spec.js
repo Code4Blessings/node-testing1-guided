@@ -6,7 +6,7 @@ describe('Car class', () => {
   })
   it('can make an instance of Car', () => {
     const celica = new Car()
-    
+    expect(celica).toBeInstanceOf()
   })
 })
 
