@@ -3,5 +3,7 @@ test('sanity', () => {          // test
   expect(1 + 2).toBe(3)         // another assertion
   expect('foo').toHaveLength(3) // toHaveLength is a "matcher"
   expect(false).toBeFalsy()     // toBeFalsy is another "matcher"
-  expect({}).toBe({})
+  const o = {}
+  const oo = o
+  expect(o).toBe(oo)
 })
