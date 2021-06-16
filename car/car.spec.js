@@ -2,6 +2,9 @@ const Car = require('./car')
 
 describe('Car class', () => {
   let mustang
+  beforeEach(() => {
+    
+  })
   it('is defined', () => {
     expect(Car).toBeDefined()
   })
