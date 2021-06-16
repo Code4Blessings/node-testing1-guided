@@ -23,7 +23,7 @@ describe('Car class', () => {
     expect(camry).toHaveProperty('model', 'Camry')
   })
   it('cars have a "drive" method', () => {
-    // use the mustang right here!
+    expect(mustang.drive).toBe
   })
 })
 
