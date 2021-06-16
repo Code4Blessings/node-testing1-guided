@@ -15,8 +15,8 @@ describe('Car class', () => {
     expect(f150).toHaveProperty('make', 'Ford')
   })
   it('cars have a "model" property', () => {
-    const celica = new Car('Toyota', 'Camry')
-    expect(celica).toHaveProperty('model', 'Camry')
+    const camry = new Car('Toyota', 'Camry')
+    expect(camry).toHaveProperty('model', 'Camry')
   })
 })
 
