@@ -3,7 +3,7 @@ const Car = require('./car')
 describe('Car class', () => {
   let mustang
   beforeEach(() => {
-    
+    mustang = new Car('Ford', 'Mustang')
   })
   it('is defined', () => {
     expect(Car).toBeDefined()
@@ -23,7 +23,7 @@ describe('Car class', () => {
     expect(camry).toHaveProperty('model', 'Camry')
   })
   it('cars have a drive method', () => {
-
+    // use the mustang right here!
   })
 })
 
