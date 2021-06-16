@@ -23,7 +23,7 @@ describe('Car class', () => {
     expect(camry).toHaveProperty('model', 'Camry')
   })
   it('cars have an odometer that starts at 0', () => {
-    expect(Car).toHaveProperty('odometer', 0)
+    expect(mustang).toHaveProperty('odometer', 0)
   })
   it('cars have a "drive" method', () => {
     expect(mustang.drive).toBeDefined()
