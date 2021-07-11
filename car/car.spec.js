@@ -13,10 +13,21 @@ describe('Car Class', () => {
         expect(prius).toBeInstanceOf(Car)
     })
     it('instances of cars have a model prop', () => {
-        const newCar = new Car()
+        const newCar = new Car('toyota', 'corrola')
         expect(newCar).toHaveProperty('model')
         expect(newCar.model).toBeDefined
     })
+    it('cars can be initialized with a custom make and model', () => {
+       // we can instantiate a car passing make and model
+       // and that gives us an object with the same make and model
+       const corolla = new Car('toyota', 'corolla')
+       expect(corolla).toHaveProperty('make', 'toyota')
+       expect(corolla).toHaveProperty('model', 'corolla')
+       expect(corolla.make).toBe('toyota')
+       // expect(corolla).toEqual({make: 'toyota', model: 'corolla'}) --this will fail when constructor is updated
+       expect(corolla).toMatchObject({ make: 'toyota', model: 'corolla'})
+    })
+    
 })
 
 function addsOne(num) {
@@ -47,6 +58,7 @@ describe('intro to jest', () => { //to organize
         const expectedResult = 'Hello Robin'
         const actualResult = greets('Robin')
         expect(actualResult).toBe(expectedResult)
+
     })
 
     // When using composite structures such as {} and [], .toBe function will NOT work. Use .toEqual
