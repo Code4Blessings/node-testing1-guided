@@ -5,29 +5,33 @@ const Car = require('./car')
 // External libraries are mocked
 
 describe('Car Class', () => {
+    // beforeEach states that before each test is run, include the new Car statement
+    let corolla
+    beforeEach(() => {
+        corolla = new Car('toyota', 'corolla')
+    })
     it('exists', () => {
         expect(Car).toBeDefined()
     })
     it('can make a car with it', () => {
-        const prius = new Car()
-        expect(prius).toBeInstanceOf(Car)
+        expect(corolla).toBeInstanceOf(Car)
     })
     it('instances of cars have a model prop', () => {
-        const newCar = new Car('toyota', 'corrola')
-        expect(newCar).toHaveProperty('model')
-        expect(newCar.model).toBeDefined
+        expect(corolla).toHaveProperty('model')
+        expect(corolla.model).toBeDefined
     })
     it('cars can be initialized with a custom make and model', () => {
        // we can instantiate a car passing make and model
        // and that gives us an object with the same make and model
-       const corolla = new Car('toyota', 'corolla')
        expect(corolla).toHaveProperty('make', 'toyota')
        expect(corolla).toHaveProperty('model', 'corolla')
        expect(corolla.make).toBe('toyota')
        // expect(corolla).toEqual({make: 'toyota', model: 'corolla'}) --this will fail when constructor is updated
        expect(corolla).toMatchObject({ make: 'toyota', model: 'corolla'})
     })
-    
+    it('has an odometer initialized at zero for all cars', () => {
+        expect(corolla.odometer).toBe(0)
+    })
 })
 
 function addsOne(num) {
