@@ -32,7 +32,18 @@ describe('Car Class', () => {
     it('has an odometer initialized at zero for all cars', () => {
         expect(corolla.odometer).toBe(0)
     })
+    it('has a drive method that takes distance and increases odometer', () => {
+        corolla.drive(12)
+        corolla.drive(14)
+        expect(corolla.odometer).toBe(26)
+    })
+    it('drive method returns the distance driven', () => {
+        const distanceDriven = corolla.drive(25)
+        expect(distanceDriven).toBe(25)
+    })
 })
+
+// it.only will enable you to run just one test
 
 function addsOne(num) {
     return num + 1
